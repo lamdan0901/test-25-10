@@ -8,6 +8,7 @@ export default defineConfig({
     open: true,
     port: 3000
   },
+  base: "/",
   build: {
     outDir: "dist" // This should match Vercel's output directory setting
   },
