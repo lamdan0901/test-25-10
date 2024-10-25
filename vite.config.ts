@@ -8,6 +8,9 @@ export default defineConfig({
     open: true,
     port: 3000
   },
+  build: {
+    outDir: "dist" // This should match Vercel's output directory setting
+  },
   plugins: [react()],
   resolve: {
     alias: {
