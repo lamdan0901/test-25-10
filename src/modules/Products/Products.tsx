@@ -1,9 +1,9 @@
 import { Button, Text } from "@shopify/polaris";
-import ProductTable from "./components/ProductTable";
 import { useEffect, useState } from "react";
 import { createProduct, getProducts } from "@/api/product";
-import AddProductModal from "./components/AddProductModal";
-import { ProductDataProps } from "./components/type";
+import ProductTable from "@/modules/Products/components/ProductTable";
+import AddProductModal from "@/modules/Products/components/AddProductModal";
+import { ProductDataProps } from "@/modules/Products/components/type";
 
 const Product = () => {
   const [products, setProducts] = useState<ProductDataProps[]>([]);

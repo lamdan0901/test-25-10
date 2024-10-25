@@ -1,8 +1,8 @@
-import DateListPicker from "./components/DateListPicker";
-import LineChart from "./components/LineChart";
 import { useState } from "react";
-import BarChart from "./components/BarChart";
 import { Grid, Text, LegacyCard } from "@shopify/polaris";
+import BarChart from "@/modules/Dashboard/components/BarChart";
+import DateListPicker from "@/modules/Dashboard/components/DateListPicker";
+import LineChart from "@/modules/Dashboard/components/LineChart";
 
 const DashBoard = () => {
   const [selectedDays, setSelectedDays] = useState<number | null>(null);

@@ -2,7 +2,7 @@ import { Button, Modal, LegacyStack, DropZone, Image, TextField, Icon } from "@s
 import { XSmallIcon } from "@shopify/polaris-icons";
 import { useState, useCallback } from "react";
 import { fileToBase64 } from "@/utils/helpers";
-import { AddProductModalProps } from "./type";
+import { AddProductModalProps } from "@/modules/Products/components/type";
 
 function AddProductModal({ isActive, onClose, onSubmit }: AddProductModalProps) {
   const initialFormData = {

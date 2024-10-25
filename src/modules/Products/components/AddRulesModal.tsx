@@ -1,7 +1,11 @@
+import {
+  AddRulesModalProps,
+  FormDataProps,
+  ProductDataProps
+} from "@/modules/Products/components/type.ts";
 import { Button, Modal, LegacyStack, TextField, Icon, ButtonGroup } from "@shopify/polaris";
 import { DeleteIcon, PlusIcon } from "@shopify/polaris-icons";
 import { useState, useCallback, useEffect } from "react";
-import { AddRulesModalProps, FormDataProps, ProductDataProps } from "./type";
 
 function AddRulesModal({ isActive, onClose, onSubmit, productData }: AddRulesModalProps) {
   const initialFormData = {

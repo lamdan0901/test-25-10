@@ -16,10 +16,10 @@ import {
 } from "@shopify/polaris";
 import { DeleteIcon, PlusIcon } from "@shopify/polaris-icons";
 import { useState, useCallback } from "react";
-import AddRulesModal from "./AddRulesModal";
 import { deleteProduct, getProducts, updateProduct } from "@/api/product";
 import { formatDate } from "@/utils/helpers";
-import { ProductDataProps, ProductTableProps } from "./type";
+import { ProductDataProps, ProductTableProps } from "@/modules/Products/components/type";
+import AddRulesModal from "@/modules/Products/components/AddRulesModal";
 
 const createTabs = (itemStrings: string[], setSelectedStatus: (status: string) => void) => {
   return itemStrings.map((item, index) => ({
