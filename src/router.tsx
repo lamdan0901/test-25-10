@@ -2,9 +2,9 @@ import { Navigate, useRoutes } from "react-router-dom";
 import { PATH } from "./constants/paths";
 import NotFound from "@/modules/NotFound";
 import MainLayout from "@/layouts/MainLayout";
-import Product from "@modules/Products/Products";
-import DashBoard from "@modules/Dashboard/Dashboard";
-import Settings from "@modules/Settings/Settings";
+import Product from "@/modules/Products/Products";
+import DashBoard from "@/modules/Dashboard/Dashboard";
+import Settings from "@/modules/Settings/Settings";
 
 const RouterConfig = () => {
   const createRoutes = useRoutes([
